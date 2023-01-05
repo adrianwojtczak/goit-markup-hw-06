@@ -743,7 +743,8 @@ body {
 
 .form-item_icon {
     position: absolute;
-    top: calc(50% - 9px);
+    top: 50%;
+    transform: translateY(-50%);
     left: 12px;
     transition-property: fill;
     transition-duration: 250ms;
@@ -783,6 +784,11 @@ body {
 
 .checkbox:checked ~ .checkmark-checked {
     display: block;
+}
+
+.checkbox-link,
+.checkbox-link:visited {
+    color: var(--main-blue);
 }
 
 .button_form {

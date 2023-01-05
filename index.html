@@ -661,12 +661,16 @@
                 <div class="newsletter-box flexbox flexbox-column">
                     <h3 class="newsletter_header">Zapisz się do newslettera</h3>
                     <div class="newsletter-wrapper flexbox">
-                        <input
-                            type="email"
-                            name="newsletter-email"
-                            placeholder="E-mail"
-                            class="newsletter_input"
-                        />
+                        <form>
+                            <label>
+                                <input
+                                    type="email"
+                                    name="newsletter-email"
+                                    placeholder="E-mail"
+                                    class="newsletter_input"
+                                />
+                            </label>
+                        </form>
                         <button
                             type="submit"
                             class="button button_newsletter flexbox"
@@ -764,30 +768,34 @@
                     </form>
                     <div class="form_checkbox flexbox">
                         <div class="checkbox-wrapper">
-                            <input
-                                type="checkbox"
-                                name="checkbox"
-                                class="checkbox"
-                            />
-                            <span>
-                                <svg width="16px" height="15px">
-                                    <use
-                                        href="./images/icons.svg#icon-unchecked"
-                                    ></use>
-                                </svg>
-                            </span>
-                            <span class="checkmark-checked"
-                                ><svg width="16px" height="15px">
-                                    <use
-                                        href="./images/icons.svg#icon-checked"
-                                    ></use>
-                                </svg>
-                            </span>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="checkbox"
+                                    class="checkbox"
+                                />
+                                <span>
+                                    <svg width="16px" height="15px">
+                                        <use
+                                            href="./images/icons.svg#icon-unchecked"
+                                        ></use>
+                                    </svg>
+                                </span>
+                                <span class="checkmark-checked"
+                                    ><svg width="16px" height="15px">
+                                        <use
+                                            href="./images/icons.svg#icon-checked"
+                                        ></use>
+                                    </svg>
+                                </span>
+                            </label>
                         </div>
                         <label>
                             Oświadczam iż akceptuję
-                            <a href="">Regulamin</a> i
-                            <a href="">Politykę Prywatności.</a>
+                            <a class="checkbox-link" href="">Regulamin</a> i
+                            <a class="checkbox-link" href=""
+                                >Politykę Prywatności.</a
+                            >
                         </label>
                     </div>
                     <button type="submit" class="button button_form flexbox">
