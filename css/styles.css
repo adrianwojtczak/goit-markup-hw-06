@@ -688,14 +688,17 @@ body {
     color: var(--main-grey);
     display: flex;
     flex-direction: column;
-    gap: 10px 0;
     margin-bottom: 20px;
 }
 
 .form-item {
+    margin-bottom: 4px;
+}
+
+.form-coments {
     display: flex;
     flex-direction: column;
-    gap: 4px 0;
+    gap: 4px;
 }
 
 .form-item_input {
@@ -738,6 +741,7 @@ body {
 .form-box {
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .form-item_icon {

@@ -659,18 +659,21 @@
                     </div>
                 </div>
                 <div class="newsletter-box flexbox flexbox-column">
-                    <h3 class="newsletter_header">Zapisz się do newslettera</h3>
-                    <div class="newsletter-wrapper flexbox">
-                        <form>
-                            <label>
-                                <input
-                                    type="email"
-                                    name="newsletter-email"
-                                    placeholder="E-mail"
-                                    class="newsletter_input"
-                                />
-                            </label>
-                        </form>
+                    <form>
+                        <label for="newsletter" class="newsletter_header"
+                            >Zapisz się do newslettera
+                        </label>
+                    </form>
+                    <form class="newsletter-wrapper flexbox">
+                        <label>
+                            <input
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="E-mail"
+                                class="newsletter_input"
+                                id="newsletter"
+                            />
+                        </label>
                         <button
                             type="submit"
                             class="button button_newsletter flexbox"
@@ -680,7 +683,7 @@
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </footer>
@@ -705,60 +708,64 @@
                         Zostaw swoje dane w formularzu poniżej
                     </h3>
                     <form name="form-contact" class="form">
-                        <label class="form-item"
-                            >Imie
-                            <div class="form-box">
-                                <input name="name" class="form-item_input" />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-person-black"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <label for="input-name" class="form-item">Imie</label>
+                        <label class="form-box">
+                            <input
+                                name="name"
+                                class="form-item_input"
+                                id="input-name"
+                            />
+                            <svg
+                                width="18px"
+                                height="18px"
+                                class="form-item_icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
                         </label>
-                        <label class="form-item"
-                            >Telefon
-                            <div class="form-box">
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    class="form-item_input"
-                                />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-phone-black"
-                                    ></use>
-                                </svg>
-                            </div>
+
+                        <label for="input-tel" class="form-item">Telefon</label>
+                        <label class="form-box">
+                            <input
+                                type="tel"
+                                name="tel"
+                                class="form-item_input"
+                                id="input-tel"
+                            />
+                            <svg
+                                width="18px"
+                                height="18px"
+                                class="form-item_icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
                         </label>
-                        <label class="form-item"
-                            >Email
-                            <div class="form-box">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    class="form-item_input"
-                                />
-                                <svg
-                                    width="18px"
-                                    height="18px"
-                                    class="form-item_icon"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-email-black"
-                                    ></use>
-                                </svg></div
-                        ></label>
-                        <label class="form-item"
-                            >Komentarz
+
+                        <label for="input-email" class="form-item">Email</label>
+                        <label class="form-box">
+                            <input
+                                type="email"
+                                name="email"
+                                class="form-item_input"
+                                id="input-email"
+                            />
+                            <svg
+                                width="18px"
+                                height="18px"
+                                class="form-item_icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                        </label>
+
+                        <label class="form-coments"
+                            ><span>Komentarz</span>
                             <textarea
                                 name="coments"
                                 placeholder="Wprowadź tekst"
